@@ -1,0 +1,192 @@
+
+*{box-sizing: border-box}
+
+
+body{
+    font-family: 'Bitter', serif;
+}
+
+.home{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background.jpg) no-repeat center top;
+    background-size: cover;
+    color: white;
+}
+header{
+    padding: 5px 0px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+header img{
+    width: 250px;
+    
+}
+header nav{
+    float: right;
+    margin: 10px;
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+
+.active{
+    background-color: #4E84A3;
+    border-radius: 5px;  
+}
+
+#Pre {
+    text-align: center;
+    padding: 100px 0 150px;
+}
+#Pre h1{
+    font-size: 68px;
+    font-weight: normal;
+}
+#Pre p{
+    font-size: 24px;
+}
+
+#Pre .redes{
+    margin-top: 80px;
+}
+
+#Pre .redes a{
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 38px;
+    font-weight: bold;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    line-height: 60px;
+    text-align: center; 
+            /*
+                Con el siguiente codigo se  agrega un delay 
+                en el cambio del bakground
+            */
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+/*
+    Con el siguiente codigo se modifica el fondo de los iconos de redes sociales 
+    cuando se pasa el cursor por encima de ellos
+*/
+
+#Pre .redes a:hover{
+
+    background-color: #4E84A3;
+
+}
+
+#know .box{
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    padding: 10px;
+}
+#about{
+    background-color: whitesmoke;
+}
+
+#about .box{
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    margin: 1%;
+    background-color: white;
+}
+
+#about .box p{
+    color: #666666;
+    padding: 10px;
+}
+
+#about .box img{
+    width: 100%;
+}
+#video{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#contact{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5px 0 0;    
+}
+#contact h2{
+    color: #4E84A3;
+    font-size: 100px;
+    border-radius: 50%;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    line-height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#contact input{
+    padding: 20px;
+    width: 400px;
+    border: 1x solid #ccc;
+    border-radius: 3px;
+    
+}
+
+#contact textarea{
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    border: 1x solid #ccc;
+    border-radius: 3px;
+    
+}
+
+#contact button{
+    background-color:  #4E84A3;
+    margin: 20px;
+    padding: 20px 40px;
+    width: 400px;
+    border: 1x solid #ccc;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+footer{
+    padding: 90px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container{
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+section{
+    padding: 80px 0;
+}
+
+section h2{
+    font-size:  32px;
+    text-align: center;
+    margin-bottom: 80px;
+}
