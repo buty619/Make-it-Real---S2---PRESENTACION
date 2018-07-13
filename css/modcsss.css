@@ -1,0 +1,29 @@
+#btnGroupDrop1{
+
+    border-radius: 10px; 
+    background-color:transparent;
+    border: none;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 66px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.modal-body{
+
+    text-align: center;
+
+}
+
+#mainNav{
+
+   position: fixed;
+}
+
+.card{
+    margin: 15px;
+}
