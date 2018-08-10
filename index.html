@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="Styles\normalize.css">  
         <link rel="stylesheet" href="Styles\Style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="JS/function.js"></script>        
+        <script src="JS/function.js"></script>
+        <link rel="stylesheet" href="dist\bootstrap-grid.css">        
             
     </head>
     <body>
@@ -19,7 +20,7 @@
                                 <a class="active" href="#Pre">home</a>
                                 <a href="#know">Conocimientos</a>
                                 <a href="#about">Sobre mí</a>
-                                <a href="#contact">Contacto</a>
+                                <a href="#book">Portafolio</a>
                                 </nav>
                         </div>    
                 </header>
@@ -33,77 +34,107 @@
                         </div>
                 </section>
             </div>    
-            <section id="know" class="container">
+            <section id="know" >
+                <div class="container">
                     <h2>CONOCIMIENTOS</h2>
-                        <div class="box">
+                        <div class="row">
+                        <div class="box col">
                         <img src="images/HTML5-logo.png" alt="logo HTML5">
                         <h3>HTML5</h3>
                         <p>Conocimiento en HTML5 manejo de estructuras, clases e ID.</p>
                         </div>
-                        <div class="box">
+                        <div class="box col">
                             <img src="images/CSS-logo.png" alt="logo CSS">
                             <h3>CSS3</h3>
                             <p>Manejo de CSS para dar color y forma a tus ideas.</p>
                         </div>
-                        <div class="box">
+                        <div class="box col">
                                 <img src="images/JS-logo.png" alt="logo JS">
                                 <h3>JAVA SCRIPT</h3>
                                 <p>Desarrollo de funciones que hagan tus paginas interactivas y dinámicas.</p>
-                        </div>                                            
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="box col">
+                            <img src="images/JQ-logo.png" alt="logo JQuery">
+                            <h3>JQuery</h3>
+                            <p>Manejo del Framework mas popular del 2006.</p>
+                        </div>
+                        <div class="box col">
+                                <img src="images/ANGULAR-logo.png" alt="logo ANGULAR">
+                                <h3>ANGULAR</h3>
+                                <p>Uso del Framework para facilitarnos el desarrollo de aplicaciones web SPA.</p>
+                        </div>
+                        </div>
+                    </div>                                                    
             </section>
             <section id="about">
                 <div class="container">        
                     <h2>SOBRE MÍ</h2>
-                    <div class="box">
+                    <div class="row">
+                    <div class="box col">
                         <img src="images/portafolio/ud.jpg" alt="Universidad Distrital">
                         <h3>Universidad</h3>
                         <p>Graduado en Ingeniería electrónica de la universidad Distrital Francisco Jose de Caldas.     </p>
                     </div>
-                    <div class="box">
+                    <div class="box col">
                             <img src="images/portafolio/edx.jpg" alt="Edx">
                             <h3>Edx</h3>
                             <p>En continua capacitación para el desarrollo web, a través de la plataforma de educación web EdX.</p>
                     </div>
-                    <div class="box">
+                    <div class="box col">
                             <img src="images/portafolio/make.jpg" alt="Make it Real">
                             <h3>Make it Real</h3>
                             <p>Actualmente realizando curso FRONT de 7 semanas de la plataforma educativa Make It Real.</p>
                     </div>
-                    <div class="box">
+                    </div>
+                    <div class="row">
+                    <div class="box col">
                             <img src="images/portafolio/etb.jpg" alt="ETB">
                             <h3>Experiencia Laboral</h3>
                             <p>Experiencia de 3 años como ingeniero de proyectos en la empresa de telecomunicaciones de Bogota.</p>
                     </div>
-                    <div class="box">
+                    <div class="box col">
                             <img src="images/portafolio/Github.jpg" alt="GitHub">
                             <h3>GitHub</h3>
                             <p>Actualmente en proceso de construcción de un portafolio en GitHub de los desarrollos realizados.</p>
                     </div>
-                    <div class="box">
+                    <div class="box col">
                             <img src="images/portafolio/cristian.jpg" alt="THREEHOUSE">
                             <h3>Generalidades</h3>
                             <p>Colombiano de 27 años, proactivo con toda la actitud de generar valor para su compañía.</p>
                     </div>
+                    </div>
+
                 </div>                                             
+            </section>
+            <section id="book">
+                    <div class="container">    
+                        <h2>Portafolio</h2>
+                        <div class="row">
+                        <div class="box col-4">
+                        <img src="images/portafolio/CUPON.JPG" alt="bootstrap-ejemplo">
+                        </div>
+                        <div class="box col-8">
+                        <h2>Bootstrap - It's Just a CUPON</h2>                    
+                        <p>Proyecto de cupones basado en BOOTSTRAP se hace uso de Dropdowns, Cards y Modals, basado en el tema CREATIVE (https://startbootstrap.com/template-overviews/creative/ )</p>    
+                        <a href="https://buty619.github.io/Make-it-Real---S3---BOOTSTRAP---it-s-just-a-cupon/" target="_blank">Miralo!</a>
+                        </div>    
+                        </div>
+    
+    
+                    </div>    
             </section>
             <section id="video">
                     <h2>¿Cómo hacer una página como esta?</h2>
                     <p>Si quieres un tutorial completo de cómo hacer una página web similar a esta, puedes ver el siguiente video.</p>
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/ldW3BNuUtbs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </section>
-            <section id="contact">
-                <div class="container">    
-                    <h2><i class="fas fa-envelope"></i></h2>
-                    <form>
-                    <div><input type="text" placeholder="Tu Email"></div>
-                    <div><textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea></div>           
-                    </form>
-                    <button>ENVIAR</button>
-                </div>    
-            </section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5688286743666!2d-74.12272983569477!3d4.67068884660729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7efbac37d9%3A0x3b2e0b92ed6a9c37!2sBosque+de+Modelia%2C+Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1531327829475" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
             <footer>
-                Página de presentación como desarrollador FRONTEND, en el desarrollo del curso de 7 semanas de MAKE IT REAL.
+                <p>Página de presentación como desarrollador FRONTEND, en el desarrollo del curso de 7 semanas de MAKE IT REAL.</p>
+                <p>Cristian Felipe Buitrago Rodriguez</p>
+                <p>Cell: 312 507 5291</p>
             </footer>        
     </body>
     

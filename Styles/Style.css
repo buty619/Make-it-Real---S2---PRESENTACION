@@ -12,6 +12,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background.jpg) no-repeat center top;
     background-size: cover;
     color: white;
+    
 }
 header{
     padding: 5px 0px;
@@ -19,6 +20,7 @@ header{
     height: 50px;
     position: fixed;
     background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 header img{
@@ -92,8 +94,9 @@ header nav a {
 #know .box{
     display: inline-block;
     text-align: center;
-    width: 33%;
+    /*width: 33%;*/
     padding: 10px;
+    z-index: 0;
 }
 #about{
     background-color: whitesmoke;
@@ -102,7 +105,7 @@ header nav a {
 #about .box{
     display: inline-block;
     text-align: center;
-    width: 31%;
+    /*width: 31%;*/
     margin: 1%;
     background-color: white;
 }
@@ -116,63 +119,40 @@ header nav a {
     width: 100%;
 }
 #video{
-    background-color: black;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     text-align: center;
     padding: 30px 0;
 }
 
-#contact{
-    background-color: whitesmoke;
-    text-align: center;
-    padding: 5px 0 0;    
-}
-#contact h2{
-    color: #4E84A3;
-    font-size: 100px;
-    border-radius: 50%;
+#book{
     background-color: black;
-    height: 150px;
-    width: 150px;
-    line-height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-#contact input{
-    padding: 20px;
-    width: 400px;
-    border: 1x solid #ccc;
-    border-radius: 3px;
-    
-}
-
-#contact textarea{
-    margin: 20px;
-    padding: 20px;
-    width: 400px;
-    border: 1x solid #ccc;
-    border-radius: 3px;
-    
-}
-
-#contact button{
-    background-color:  #4E84A3;
-    margin: 20px;
-    padding: 20px 40px;
-    width: 400px;
-    border: 1x solid #ccc;
-    border-radius: 3px;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
     
 }
+#book .box img{
+    width: 100%;
+}
+#book .box{
+    background-color: whitesmoke;
+    color: #666666;
+    padding: 10px;    
+    text-align: center;
+    display: inline-block;    
+}
+#book .box a{
+    color: #666666;
+    padding: 10px;
+    float: right;    
+}
+#book .box h2{
+    font-size: 24px;
+}
+
 footer{
     padding: 90px;
     text-align: center;
-    font-size: 18px;
+    font-size: 12x;
     font-weight: bold;
 }
 
