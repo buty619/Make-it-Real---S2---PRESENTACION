@@ -11,6 +11,7 @@ body{
 .home{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background.jpg) no-repeat center top;
     background-size: cover;
+    height: 660px;
     color: white;
     
 }
@@ -47,7 +48,7 @@ header nav a {
 
 #Pre {
     text-align: center;
-    padding: 100px 0 150px;
+    padding: 200px 0 150px;
 }
 #Pre h1{
     font-size: 68px;
