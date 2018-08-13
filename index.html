@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
+    <head>      
         <title>CB Frontend dev</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
         <link rel="stylesheet" href="Styles\normalize.css">  
         <link rel="stylesheet" href="Styles\Style.css">
+        <link rel="stylesheet" href="dist\bootstrap-grid.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="JS/function.js"></script>
-        <link rel="stylesheet" href="dist\bootstrap-grid.css">        
-            
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>       
     </head>
     <body>
             <div class="home">
@@ -68,43 +68,18 @@
                         </div>
                     </div>                                                    
             </section>
-            <section id="about">
-                <div class="container">        
+            <!-- Angular - Bootstrap -->
+            <section id="about" ng-app="myApp" >
+                <div class="container" ng-controller="MainController">        
                     <h2>SOBRE MÍ</h2>
-                    <div class="row">
-                    <div class="box col">
-                        <img src="images/portafolio/ud.jpg" alt="Universidad Distrital">
-                        <h3>Universidad</h3>
-                        <p>Graduado en Ingeniería electrónica de la universidad Distrital Francisco Jose de Caldas.     </p>
-                    </div>
-                    <div class="box col">
-                            <img src="images/portafolio/edx.jpg" alt="Edx">
-                            <h3>Edx</h3>
-                            <p>En continua capacitación para el desarrollo web, a través de la plataforma de educación web EdX.</p>
-                    </div>
-                    <div class="box col">
-                            <img src="images/portafolio/make.jpg" alt="Make it Real">
-                            <h3>Make it Real</h3>
-                            <p>Actualmente realizando curso FRONT de 7 semanas de la plataforma educativa Make It Real.</p>
+                    <div class="row justify-content-md-center">
+                    <div class="box col-sm-3"  ng-repeat="product in products">
+                        <img ng-src="{{ product.scr }}" alt="{{ product.Alt }}">
+                        <h3>{{ product.Titulo }}</h3>
+                        <p>{{ product.Descripcion }}</p>
                     </div>
                     </div>
-                    <div class="row">
-                    <div class="box col">
-                            <img src="images/portafolio/etb.jpg" alt="ETB">
-                            <h3>Experiencia Laboral</h3>
-                            <p>Experiencia de 3 años como ingeniero de proyectos en la empresa de telecomunicaciones de Bogota.</p>
-                    </div>
-                    <div class="box col">
-                            <img src="images/portafolio/Github.jpg" alt="GitHub">
-                            <h3>GitHub</h3>
-                            <p>Actualmente en proceso de construcción de un portafolio en GitHub de los desarrollos realizados.</p>
-                    </div>
-                    <div class="box col">
-                            <img src="images/portafolio/cristian.jpg" alt="THREEHOUSE">
-                            <h3>Generalidades</h3>
-                            <p>Colombiano de 27 años, proactivo con toda la actitud de generar valor para su compañía.</p>
-                    </div>
-                    </div>
+                    
 
                 </div>                                             
             </section>
@@ -137,6 +112,10 @@
                 <p>Cell: 312 507 5291</p>
             </footer>        
     </body>
-    
+    <!-- mODULO -->
+    <script src="JS/app.js"></script>
+
+    <!-- Controladores -->
+    <script src="JS/MainController.js"></script>
 </html>   
 
