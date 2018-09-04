@@ -137,6 +137,7 @@ header nav a {
 #book .box{
     background-color: whitesmoke;
     color: #666666;
+    margin-bottom: 10px;
     padding: 10px;    
     text-align: center;
     display: inline-block;    
