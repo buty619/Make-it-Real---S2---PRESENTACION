@@ -55,6 +55,11 @@ html {
     width: 540px;
     max-width: 100%;
   }
+  header .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
 }
 
 @media (min-width: 768px) {
@@ -62,6 +67,11 @@ html {
     width: 720px;
     max-width: 100%;
   }
+  header .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
 }
 
 @media (min-width: 992px) {
